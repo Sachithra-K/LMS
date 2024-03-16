@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36646520-EE2B-4D70-B0CD-B7400583525C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>abc_lms</RootNamespace>
+    <AssemblyName>abc_lms</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBookForm.Designer.cs">
+      <DependentUpon>AddBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowingForm.Designer.cs">
+      <DependentUpon>BorrowingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculateForm.Designer.cs">
+      <DependentUpon>CalculateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonMenuForm.Designer.cs">
+      <DependentUpon>CommonMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerLoginForm.Designer.cs">
+      <DependentUpon>LecturerLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerRegistrationForm.Designer.cs">
+      <DependentUpon>LecturerRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianLoginForm.Designer.cs">
+      <DependentUpon>LibrarianLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianMenuForm.Designer.cs">
+      <DependentUpon>LibrarianMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnForm.Designer.cs">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRegistrationForm.Designer.cs">
+      <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentLoginForm.Designer.cs">
+      <DependentUpon>StudentLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBookForm.Designer.cs">
+      <DependentUpon>ViewBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBorrowingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBorrowingForm.Designer.cs">
+      <DependentUpon>ViewBorrowingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReturnForm.Designer.cs">
+      <DependentUpon>ViewReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddBookForm.resx">
+      <DependentUpon>AddBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowingForm.resx">
+      <DependentUpon>BorrowingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculateForm.resx">
+      <DependentUpon>CalculateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonMenuForm.resx">
+      <DependentUpon>CommonMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerLoginForm.resx">
+      <DependentUpon>LecturerLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerRegistrationForm.aa-DJ.resx">
+      <DependentUpon>LecturerRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerRegistrationForm.resx">
+      <DependentUpon>LecturerRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrarianLoginForm.resx">
+      <DependentUpon>LibrarianLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrarianMenuForm.resx">
+      <DependentUpon>LibrarianMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReturnForm.resx">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentLoginForm.resx">
+      <DependentUpon>StudentLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRegistrationForm.resx">
+      <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBookForm.resx">
+      <DependentUpon>ViewBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBorrowingForm.resx">
+      <DependentUpon>ViewBorrowingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReturnForm.resx">
+      <DependentUpon>ViewReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
